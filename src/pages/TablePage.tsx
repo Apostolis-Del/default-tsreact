@@ -9,6 +9,8 @@ const TablePage: React.FC = () => {
   ];
 
   return (
+    <div >
+    <div className="grid place-content-center min-h-screen min-w-screen ">
     <div className="p-4">
       <h2 className="text-2xl font-semibold mb-4">Table Page</h2>
       <table className="w-full border-collapse border border-gray-300">
@@ -29,6 +31,8 @@ const TablePage: React.FC = () => {
           ))}
         </tbody>
       </table>
+    </div>
+    </div>
     </div>
   );
 };

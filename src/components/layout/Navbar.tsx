@@ -25,29 +25,30 @@ const Navbar = (props: Props) => {
       {(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? (
        <Link to={'/'}>
          <img
-            src="/img/avininternational_logo_White5.svg"
+            src="https://it.konkat.gr/wp-content/uploads/2018/07/cropped-citd_logo_w.png"
             alt="Avin International"
-            width={200}
-            height={200}
+            width={65}
+            height={65}
             />
         </Link>
         ):(
           <Link to={'/'}>
           <img
-             src="/img/avininternational_logo.png"
+             src="https://it.konkat.gr/wp-content/uploads/2018/07/cropped-citd_logo_w.png"
              alt="Avin International"
-             width={200}
-             height={200}
+             width={65}
+             height={65}
              />
          </Link>
         )}
       </div>
       
       <div className="flex-grow"></div>
-     {/* {!token && !user ? (
+      {/* {!token && !user ? ( */}
       <ul className="flex items-center gap-6 dark:text-white" >
-            <Login />
+            Username
       </ul>
+      {/*
       ):(
       <ul className="flex items-center gap-6 dark:text-white" >
         <Logout />

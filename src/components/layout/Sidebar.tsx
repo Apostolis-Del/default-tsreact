@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import classNames from "classnames";
-import { useOnClickOutside } from "usehooks-ts";
+import { Link } from "react-router-dom";
 import { defaultNavItems } from "./defaultNavItems";
-import {Link} from 'react-router-dom';
+import { useOnClickOutside } from "usehooks-ts";
 
 // define a NavItem prop
 export type NavItem = {
@@ -18,7 +18,6 @@ type Props = {
 };
 const Sidebar = ({ open, navItems = defaultNavItems, setOpen }: Props) => {
   const ref = useRef<HTMLDivElement>(null);
-
   useOnClickOutside(ref, (e) => {
     setOpen(false);
   });
@@ -56,10 +55,10 @@ const Sidebar = ({ open, navItems = defaultNavItems, setOpen }: Props) => {
       </nav>
       {/* account  */}
       
-          {/* {token && ( 
+      
           <div className=" p-4">
             <div className="flex gap-4 items-center">
-              <Image
+              <img
                 src={
                   "/img/redusericon.jpg"
                 }
@@ -69,13 +68,14 @@ const Sidebar = ({ open, navItems = defaultNavItems, setOpen }: Props) => {
                 className="rounded-full"
               />
             <div className="flex flex-col ">
-              <span className="text-indigo-50 my-0">{user}</span>
-             
+              <span className="text-indigo-50 my-0">Apostolos</span>
+              {/* <Link href="/" className="text-indigo-200 text-sm">
+                View Profile
+              </Link> */}
             </div>
             </div>
           </div>
-      )} */
-      }
+ 
          
         
     </div>
