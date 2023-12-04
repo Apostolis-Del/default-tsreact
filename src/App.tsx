@@ -1,8 +1,7 @@
 import './App.css';
 import React from 'react';
-import Header from './components/Header';
-import Sidebar from './components/Siderbar';
-import TablePage from './pages/TablePage';
+import Table from './components/table/Table';
+import TablewithPagination from './components/table/TablewithPagination';
 import Layout from './components/layout/Layout';
 import { Route,Routes } from 'react-router-dom';
 
@@ -11,7 +10,7 @@ const App: React.FC = () => {
     //<div className="flex h-screen">
     <Layout>
         <Routes>
-          <Route path="/" element={<TablePage/>}/>
+          <Route path="/" element={<Table/>}/>
         </Routes>
     </Layout> 
     //</div>

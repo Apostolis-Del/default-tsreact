@@ -25,7 +25,7 @@ const Sidebar = ({ open, navItems = defaultNavItems, setOpen }: Props) => {
     <div
       className={classNames({
         "flex flex-col justify-between": true, // layout
-        "bg-blue-900 text-zinc-50": true, // colors
+        "bg-blue-200 text-zinc-50": true, // colors
         "md:w-full md:sticky md:top-16 md:z-0 top-0 z-20 fixed": true, // positioning
         "md:h-[calc(100vh_-_64px)] h-full w-[300px]": true, // for height and width
         "transition-transform .3s ease-in-out md:-translate-x-0": true, //animations
@@ -40,7 +40,7 @@ const Sidebar = ({ open, navItems = defaultNavItems, setOpen }: Props) => {
               <Link key={index} to={item.href}>
                 <li
                   className={classNames({
-                    "text-indigo-100 hover:bg-red-700": true, //colors
+                    "text-indigo-100 hover:bg-blue-600": true, //colors
                     "flex gap-4 items-center ": true, //layout
                     "transition-colors duration-300": true, //animation
                     "rounded-md p-2 mx-2": true, //self style
@@ -58,15 +58,10 @@ const Sidebar = ({ open, navItems = defaultNavItems, setOpen }: Props) => {
       
           <div className=" p-4">
             <div className="flex gap-4 items-center">
-              <img
-                src={
-                  "/img/redusericon.jpg"
-                }
-                height={36}
-                width={36}
-                alt="profile image"
-                className="rounded-full"
-              />
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+            </svg>
+
             <div className="flex flex-col ">
               <span className="text-indigo-50 my-0">Apostolos</span>
               {/* <Link href="/" className="text-indigo-200 text-sm">

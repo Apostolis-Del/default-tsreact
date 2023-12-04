@@ -13,13 +13,13 @@ const Navbar = (props: Props) => {
   return (
     <nav
       className={classNames({
-        "bg-white text-zinc-500": true, // colors
+        "bg-white text-zinc-500": true, // colors     
         "flex items-center justify-between": true, // layout
-        "w-full fixed z-10 px-4 shadow-sm h-16 dark:bg-gray-600": true, //positioning & styling
+        "w-full fixed z-10 px-4 shadow-sm h-16 dark:bg-gray-600": true, //posi tioning & styling 
       })}
     >
       <button className="md:hidden" onClick={props.onMenuButtonClick}>
-        <Bars3Icon className="h-6 w-6" />
+        <Bars3Icon className="h-6 w-6" /> 
       </button>
       <div className="font-bold text-lg">
       {(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? (
@@ -50,7 +50,7 @@ const Navbar = (props: Props) => {
       </ul>
       {/*
       ):(
-      <ul className="flex items-center gap-6 dark:text-white" >
+      <ul className="flex it ems-center gap-6 dark:text-white" >
         <Logout />
       </ul>
      )} */}

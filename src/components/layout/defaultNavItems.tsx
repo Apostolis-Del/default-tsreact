@@ -15,17 +15,17 @@ export const defaultNavItems: NavItem[] = [
     icon: <HomeIcon className="w-6 h-6" />,
   },
   {
-    label: "Vessels",
-    href: "/vessels",
+    label: "Files", 
+    href: "/files",
     icon: <FolderIcon className="w-6 h-6" />,
   },
   {
-    label: "Seafarers",
-    href: "/crew",
+    label: "People", 
+    href: "/people",
     icon: <UserGroupIcon className="w-6 h-6" />,
   },
   {
-    label: "Services",
+    label: "Services",   
     href: "/services",
     icon: <BriefcaseIcon className="w-6 h-6" />,
   },
